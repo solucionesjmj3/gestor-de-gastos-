@@ -1,0 +1,113 @@
+/* Menu.css */
+
+/* General Styles */
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.navbar {
+    margin-bottom: 20px;
+    background-color: #1e3a8a; /* Azul oscuro */
+}
+
+.navbar-brand img {
+    border-radius: 50%;
+}
+
+.navbar-burger {
+    color: #fff;
+}
+
+.navbar-menu .navbar-item {
+    color: #fff;
+}
+
+.navbar-menu .navbar-item:hover {
+    background-color: #163172; /* Azul más oscuro para el hover */
+    color: #fff;
+}
+
+.button.is-white.is-outlined {
+    border-color: #fff;
+    color: #fff;
+}
+
+.button.is-white.is-outlined:hover {
+    background-color: #fff;
+    color: #1e3a8a;
+}
+
+/* Card Styles */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-image img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-content .title {
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+.card-content .content {
+    color: #555;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #1e3a8a; /* Azul oscuro */
+    color: #fff;
+    padding: 2rem 1.5rem;
+}
+
+.footer .image {
+    border-radius: 50%;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .buttons .button {
+    margin: 0 5px;
+}
+
+.footer .buttons .button:hover {
+    background-color: #fff;
+    color: #1e3a8a;
+}
+
+.footer .icon {
+    font-size: 1.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-menu {
+        text-align: center;
+    }
+
+    .navbar-menu .navbar-item {
+        margin-bottom: 10px;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+}

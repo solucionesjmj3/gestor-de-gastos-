@@ -1,0 +1,211 @@
+/* mostrar.css */
+
+/* Estilos generales del cuerpo */
+body {
+    background-color: #f8f9fa; /* Color de fondo */
+    font-family: 'Quicksand', sans-serif; /* Fuente general */
+}
+
+/* Estilos para el título */
+h1 {
+    font-size: 2.5rem; /* Tamaño de fuente para el título */
+    color: #1e3a8a; /* Color del texto del título */
+    margin-top: 20px; /* Margen superior */
+}
+
+/* Estilos para los párrafos */
+p {
+    font-size: 1.2rem; /* Tamaño de fuente para párrafos */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilos para imágenes fluidas */
+.img-fluid {
+    max-width: 120px; /* Ancho máximo de imágenes */
+    height: auto; /* Mantener proporción */
+}
+
+/* Estilos para los iconos de categorías en las tarjetas */
+.card-title img {
+    width: 30px; /* Ajuste del tamaño de los iconos de categorías */
+    height: 30px; /* Ajuste del tamaño de los iconos de categorías */
+    margin-right: 10px; /* Espacio a la derecha */
+}
+
+/* Estilos para las tarjetas */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra de la tarjeta */
+    border: none; /* Sin borde */
+    margin-bottom: 20px; /* Espaciado inferior entre tarjetas */
+}
+
+.card-body {
+    padding: 1rem; /* Espaciado interno de la tarjeta */
+}
+
+/* Estilos para el botón primario */
+.btn-primary {
+    background-color: #1e3a8a; /* Color de fondo del botón primario */
+    border-color: #1e3a8a; /* Color del borde del botón primario */
+    display: block; /* Hacer que el botón ocupe todo el ancho */
+    margin: 0 auto; /* Centrar el botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    font-size: 1.2rem; /* Tamaño de fuente del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, border-color 0.3s; /* Transición suave para el color de fondo y el borde */
+}
+
+.btn-primary:hover {
+    background-color: #163172; /* Color de fondo del botón primario al pasar el cursor */
+    border-color: #163172; /* Color del borde del botón primario al pasar el cursor */
+}
+
+/* Estilos para alertas */
+.alert {
+    margin-bottom: 20px; /* Margen inferior para alertas */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    margin-bottom: 20px;
+    background-color: #1e3a8a; /* Azul oscuro */
+}
+
+.navbar-brand img {
+    border-radius: 50%;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    color: #fff;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ddd;
+}
+
+.btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: #1e3a8a;
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #1e3a8a; /* Color de fondo del footer */
+    color: white; /* Color del texto del footer */
+    padding: 10px 0; /* Espaciado superior e inferior */
+}
+
+.footer p {
+    margin: 0; /* Eliminar márgenes por defecto */
+}
+
+.footer a {
+    text-decoration: none; /* Eliminar subrayado */
+}
+
+/* Estilos para el contenedor de gastos */
+.container .row#gastosContainer {
+    display: flex; /* Flexbox para alinear elementos */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+    justify-content: space-evenly; /* Espaciado uniforme entre tarjetas */
+}
+
+.container .row#gastosContainer .card {
+    flex: 0 1 calc(33% - 20px); /* Ajuste del tamaño de las tarjetas */
+    margin: 10px; /* Margen entre tarjetas */
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #1e3a8a; /* Color de fondo del footer */
+    color: white; /* Color del texto */
+    padding: 40px 0; /* Espaciado superior e inferior */
+    position: relative; /* Posicionamiento relativo para el contenido */
+    margin-top: 40px; /* Separación del contenido superior */
+    border-top: 5px solid #0056b3; /* Borde superior para mayor separación */
+}
+
+.footer .container {
+    max-width: 1140px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+.footer .row {
+    display: flex; /* Flexbox para alinear elementos */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+.footer .col-md-4 {
+    flex: 1 0 30%; /* Flexibilidad para columnas */
+    margin: 10px; /* Espaciado entre columnas */
+    text-align: center; /* Centrar texto dentro de las columnas */
+}
+
+.footer img {
+    max-width: 80%; /* Ajustar el tamaño de la imagen */
+    height: 60px; /* Mantener la proporción de la imagen */
+}
+
+.footer p {
+    margin: 0; /* Eliminar márgenes por defecto */
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño para el texto */
+}
+
+.footer a {
+    text-decoration: none; /* Eliminar subrayado */
+    transition: color 0.3s; /* Transición suave para el color */
+}
+
+.footer a:hover {
+    color: #ffcc00; /* Color de texto al pasar el cursor */
+}
+
+.footer .bi {
+    font-size: 1.5rem; /* Tamaño de los iconos de Bootstrap */
+    transition: transform 0.3s; /* Transición suave para el tamaño */
+}
+
+.footer .bi:hover {
+    transform: scale(1.2); /* Aumentar el tamaño del icono al pasar el cursor */
+}
+
+/* Estilo adicional para mejorar la legibilidad */
+.footer .social-icons {
+    margin: 10px 0; /* Espaciado alrededor de los iconos sociales */
+}
+
+.footer .social-icons a {
+    margin: 0 5px; /* Espaciado entre iconos sociales */
+}
+
+/* Estilos para el botón "Registrar Gasto" */
+.button.is-primary {
+    background-color: #1e3a8a; /* Azul oscuro */
+    border-color: #1e3a8a;
+    color: #fff;
+}
+
+.button.is-primary:hover {
+    background-color: #163172; /* Azul más oscuro */
+    border-color: #163172;
+}
+
+/* Estilos para la etiqueta de fecha */
+.label[for="date"] {
+    color: #1e3a8a; /* Azul oscuro */
+    font-weight: bold;
+}

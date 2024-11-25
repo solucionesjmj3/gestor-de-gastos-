@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Visualización de gastos">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Visualización de gastos</title>
+    <link rel="icon" href="../img/icono.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- CSS -->
+    <link href="../CSS/mostrar.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar has-background-dark-blue">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <img src="../img/icono.png" width="50" alt="Logo de la página web" class="rounded-full">
+                    <span class="has-text-white ml-3">Aplicación de Gastos</span>
+                </a>
+                <span class="navbar-burger" data-target="navbarMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item has-text-white" href="Menu.html">Inicio</a>
+                    <a class="navbar-item has-text-white" href="MenuR.html">Registro de Gastos</a>
+                    <a class="navbar-item has-text-white" href="MenuV.html">Visualización de Gastos</a>
+                    <a class="navbar-item">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="text-center">
+            <img src="../src/eficiencia.png" alt="Logo" class="img-fluid mb-3">
+        </div>
+        <h1 class="text-center">Visualización de Gastos</h1>
+        <p class="text-center text-success fw-bold">"Cada centavo cuenta hacia un futuro brillante"</p>
+        <div id="alert" class="alert alert-warning d-none" role="alert"></div>
+        <div class="row mb-4">
+            <div class="col text-end">
+                <button type="button" class="btn btn-primary" onclick="window.location.href='../html/MenuR.html'">Registrar Nuevo Gasto</button>
+            </div>
+        </div>
+        <div class="row" id="gastosContainer">
+            <!-- Aquí se agregarán dinámicamente las tarjetas de los gastos -->
+        </div>
+    </div>
+
+    <footer class="footer has-background-dark-blue has-text-white">
+        <div class="content has-text-centered">
+            <div class="columns">
+                <div class="column">
+                    <a href="../img/imagen del grupo.jpg">
+                        <img src="../img/icono.png" alt="Logo de la pagina" class="image is-64x64">
+                    </a>
+                    <p class="mt-2">© 2024 Todos los derechos reservados.</p>
+                </div>
+                <div class="column">
+                    <p>Síguenos en:</p>
+                    <div class="buttons is-centered">
+                        <a href="https://www.facebook.com" class="button is-white">
+                            <span class="icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </span>
+                        </a>
+                        <a href="https://github.com/solucionesjmj3" class="button is-white">
+                            <span class="icon">
+                                <i class="fab fa-github"></i>
+                            </span>
+                        </a>
+                        <a href="https://www.instagram.com" class="button is-white">
+                            <span class="icon">
+                                <i class="fab fa-instagram"></i>
+                            </span>
+                        </a>
+                        <a href="https://twitter.com" class="button is-white">
+                            <span class="icon">
+                                <i class="fab fa-twitter"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="column">
+                    <p>Contacta con nosotros:</p>
+                    <a href="mailto:Solucionesjmj3@gmail.com" class="has-text-white">Solucionesjmj3@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="../JS/mostrar.js"></script>
+</body>
+</html>
